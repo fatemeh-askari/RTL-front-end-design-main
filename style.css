@@ -686,8 +686,14 @@ Slider
     border-radius: 4px;
 }
 
+.slider .text-content-mid {
+    font-weight: var(--fw6);
+    font-size: 0.65em;
+}
+
 .text-content :where(h2, h3) span:first-child {
-    font-size: var(--fw3);
+    font-weight: var(--fw6);
+    font-size: 0.60em;
     color: var(--light-text-color);
 }
 
@@ -695,6 +701,10 @@ Slider
     color: var(--secondary-dark-color);
     text-transform: uppercase;
     letter-spacing: -1px;
+}
+
+.monetary-unit {
+    font-size: var(--font-small);
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
@@ -1050,6 +1060,7 @@ Banners
 .banners .item {
     position: relative;
     background-color: var(--white-color);
+    border: 1px solid #eee;
 }
 
 .banner .image {
@@ -1074,8 +1085,9 @@ Banners
 }
 
 .banner h3 {
-    font-size: calc(1em + 0.5vw);
-    font-weight: var(--fw3);
+    font-size: calc(0.4em + 0.5vw);
+    font-weight: var(--fw6);
+    line-height: 2;
 }
 
 .banner h3 span {
