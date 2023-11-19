@@ -78,7 +78,7 @@ table {
     border-spacing: 0;
 }
 
-input::placeholder {
+input::placeholder, button {
     font: inherit; 
 }
 
@@ -410,7 +410,7 @@ Header Main, Departments Category
 ***********/
 .header-main {
     background-color: var(--secondary-dark-color);
-    padding: 1.5em 0;
+    padding: 1.8em 0;
     margin-bottom: 2em;
 }
 
@@ -1111,6 +1111,7 @@ Banners
 
 .banners .product-categories .image {
     max-width: 150px;
+    margin-left: 1.6em;
 }
 
 .mini-links ul {
@@ -1142,10 +1143,6 @@ newsletter
     color: var(--white-color);
 }
 
-.newsletter .search {
-    direction: ltr;
-}
-
 .newsletter h3 {
     font-size: 1.5em;
 }
@@ -1157,7 +1154,7 @@ newsletter
 }
 
 .newsletter p strong {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .newsletter form {
@@ -1859,15 +1856,15 @@ Sidebar products filter
 }
 
 .filter-block h4 {
-    font-size: 1.25em;
+    font-size: 1.05em;
     margin-bottom: 0.5em;
 }
 
 .filter-block li {
     display: flex;
-    font-size: 0.9em;
+    font-size: 0.85em;
     position: relative;
-    line-height: 2;
+    line-height: 2.5;
 }
 
 .filter-block label .checked {
@@ -2591,6 +2588,16 @@ Back to top
     }
 }
 
+@media screen and (max-width: 500px) {
+    .brands .item img {
+        width: 70px;
+    }
+
+
+    .iscart .icon-text {
+        display: none;
+    }
+}
 
 
 @media screen and (max-width: 639px) {
@@ -2919,7 +2926,7 @@ Back to top
     }
     
     .single-category .sidebar .filter {
-        padding: 0 0 0 1.5em;
+        padding: 0 1.5em 0 0;
         position: sticky;
         top: 2em;
         box-shadow: none;
@@ -2932,7 +2939,6 @@ Back to top
     .single-category .products.main .item {
         flex: 0 0 33.3333%;
     }
-
 
     /* page cart */
     .products.cart .form-cart {
@@ -2947,3 +2953,4 @@ Back to top
 
 
 }
+
