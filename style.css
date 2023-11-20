@@ -397,8 +397,9 @@ nav .fly-item,
 }
 
 .mini-text {
-    font-size: var(--font-smaller);
+    font-size: 0.65em;
     color: var(--light-text-color);
+    margin-top: 0.55em;
 }
 
 
@@ -1377,7 +1378,7 @@ product details
     position: absolute;
     top: 0;
     bottom: auto;
-    padding: 1em;
+    padding: 1em 0.5em;
     z-index: 2;
     background-color: var(--dark-color);
     color: var(--white-color);
@@ -1438,6 +1439,11 @@ product details
 /*******************
 product description
 *******************/
+.products.one .item h1 {
+    font-size: 2.1em;
+}
+
+
 .products.one .available {
     font-size: var(--font-small);
     font-weight: var(--fw5);
@@ -1460,7 +1466,7 @@ product description
 }
 
 .products.one .price .current {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .products .variant form {
@@ -1713,13 +1719,17 @@ product review form
 /*******************
 product review form
 *******************/
+.review-form h4 {
+    font-size: 1.8em !important;
+}
+
 .review-form .rating {
     flex-wrap: wrap;
 }
 
 .review-form p {
     font-size: 1.25em;
-    margin-right: 1em;
+    margin-left: 1em;
 }
 
 .review-form .rate-this input {
@@ -1728,7 +1738,7 @@ product review form
 
 .review-form .rate-this label {
     float: right;
-    font-size: 2em;
+    font-size: 1.7em;
     color: var(--secondary-dark-color);
 }
 
