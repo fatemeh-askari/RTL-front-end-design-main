@@ -2169,6 +2169,10 @@ Page Cart
     margin: 1.5em 0;
 }
 
+.single-cart .page-title h1 {
+    font-size: 1.42em;
+}
+
 .products.cart form {
     width: var(--percent100);
 }
@@ -2293,6 +2297,7 @@ Page Cart
     top: 0;
     right: 20px;
     line-height: 3;
+    font-size: var(--font-smaller);
 }
 
 .cart-summary .variant input:checked + label::before {
@@ -2323,9 +2328,8 @@ Page Cart
 }
 
 .cart-summary .grand-total td {
-    font-size: 2em;
-    font-family: 'Poppins';
-    font-weight: var(--fw8);
+    font-size: 1.2em;
+    font-weight: var(--fw7);
     line-height: 2em;
 }
 
@@ -2334,7 +2338,7 @@ Page Cart
     display: block;
     text-align: center;
     margin-top: 2em;
-    font-size: 1.25em;
+    font-size: 1.05em;
 }
 
 
@@ -2365,6 +2369,7 @@ Page Checkout
 
 .checkout .left h1 {
     font-weight: var(--fw3);
+    font-size: 1.25em;
     margin-bottom: 1.5em;
 }
 
@@ -2397,11 +2402,15 @@ Page Checkout
 
 .checkout p.checkset {
     flex-direction: row;
+    margin-top: 1em;
 } 
 
 .checkout p.checkset label {
-    margin: 0 1em 0 0;
     cursor: pointer;
+}
+
+.checkout p.checkset .anaccount {
+    margin: 1em;
 }
 
 .checkout h2 {
@@ -2426,7 +2435,8 @@ Page Checkout
 }
 
 .checkout .item.right h2 {
-    padding-right: 1em;
+    padding-right: 2.2em;
+    font-size: 1.2em;
 }
 
 .checkout .item.right :where(.products li, .item-content) {
